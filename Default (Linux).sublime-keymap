@@ -1,0 +1,52 @@
+[
+	// movement 
+	{ "keys": ["ctrl+b"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["ctrl+f"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+	// highlight 
+	{ "keys": ["alt+b"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+	{ "keys": ["alt+f"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+	{ "keys": ["alt+p"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+	{ "keys": ["alt+n"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+
+	// redefine find and build 
+	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+	{ "keys": ["ctrl+shift+b"], "command": "build" },
+
+	// jump to end/beginning of line 
+	{ "keys": ["alt+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+	// close all 
+	{ "keys": ["alt+shift+w"], "command": "close_all" },
+
+	// panel navigation 
+	{ "keys": ["ctrl+j"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+;"], "command": "focus_neighboring_group" },
+	// move to other panel 
+	{ "keys": ["ctrl+shift+j"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+shift+;"], "command": "move_to_neighboring_group" },
+
+	// scrolling 
+	// { "keys": ["ctrl+space"], "command": "scroll_lines", "args": {"amount": 1.0 } },
+	// { "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": -1.0 } },
+
+	// multiple cursors 
+	{ "keys": ["alt+shift+p"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["alt+shift+n"], "command": "select_lines", "args": {"forward": true} },
+
+	// beginning/end of file 
+	{ "keys": ["escape", "<"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+	{ "keys": ["escape", ">"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+
+	// save all 
+	{ "keys": ["alt+shift+s"], "command": "save_all" }, 
+
+	// new file 
+	{ "keys": ["ctrl+space"], "command": "new_file" },
+
+	// word wrap on/off
+	{ "keys": ["ctrl+t", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}}, 
+]
