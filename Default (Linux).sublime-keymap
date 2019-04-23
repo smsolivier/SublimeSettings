@@ -49,4 +49,9 @@
 
 	// word wrap on/off
 	{ "keys": ["ctrl+t", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}}, 
+
+	// tab filter 
+	{ "keys": ["ctrl+shift+d"],
+		"command": "tab_filter" 
+	}
 ]
