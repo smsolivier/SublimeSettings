@@ -17,6 +17,17 @@ contexts:
       scope: punctuation.definition.comment.example-c
       push: line_comment
 
+    - match: '/\*'
+      push:
+        - - match: '\s*(?=\w)'
+          - match: ""
+            pop: true
+        - - meta_scope: comment.block.c
+          - match: '\*/'
+            scope: punctuation.definition.comment.c
+            pop: true
+
+
     # Keywords are if, else for and while.
     # Note that blackslashes don't need to be escaped within single quoted
     # strings in YAML. When using single quoted strings, only single quotes
