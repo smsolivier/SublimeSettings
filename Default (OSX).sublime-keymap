@@ -184,7 +184,6 @@
 	{ "keys": ["ctrl+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 	{ "keys": ["ctrl+ctrl+p"], "command": "prompt_select_workspace" },
 	{ "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-	{ "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	{ "keys": ["f12"], "command": "goto_definition" },
 	{ "keys": ["shift+f12"], "command": "goto_reference" },
 	{ "keys": ["ctrl+alt+down"], "command": "goto_definition" },
@@ -198,7 +197,7 @@
 	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
 	{ "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
 	{ "keys": ["ctrl+alt+e"], "command": "replace_next" },
-	{ "keys": ["ctrl+g"], "command": "find_next" },
+	// { "keys": ["ctrl+g"], "command": "find_next" },
 	{ "keys": ["ctrl+shift+g"], "command": "find_prev" },
 	{ "keys": ["ctrl+e"], "command": "slurp_find_string" },
 	{ "keys": ["ctrl+shift+e"], "command": "slurp_replace_string" },
@@ -245,7 +244,7 @@
 	},
 
 	{ "keys": ["ctrl+alt+p"], "command": "show_scope_name" },
-	{ "keys": ["ctrl+shift+p"], "command": "show_scope_name" },
+	// { "keys": ["ctrl+shift+p"], "command": "show_scope_name" },
 
 	{ "keys": ["f7"], "command": "build" },
 	{ "keys": ["ctrl+b"], "command": "build" },
@@ -592,7 +591,7 @@
 	{ "keys": ["ctrl+k", "ctrl+a"], "command": "select_to_mark" },
 	{ "keys": ["ctrl+k", "ctrl+w"], "command": "delete_to_mark" },
 	{ "keys": ["ctrl+k", "ctrl+x"], "command": "swap_with_mark" },
-	{ "keys": ["ctrl+k", "ctrl+g"], "command": "clear_bookmarks", "args": {"name": "mark"} },
+	// { "keys": ["ctrl+k", "ctrl+g"], "command": "clear_bookmarks", "args": {"name": "mark"} },
 
 	{ "keys": ["ctrl+equals"], "command": "increase_font_size" },
 	{ "keys": ["ctrl+plus"], "command": "increase_font_size" },
@@ -774,5 +773,7 @@
 	// tab filter 
 	{ "keys": ["ctrl+shift+d"],
 		"command": "tab_filter" 
-	}
+	},
+
+	{ "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
 ]
