@@ -1,6 +1,6 @@
 {
 	// "shell_cmd": "pandoc \"$file\" -o $file_base_name.html --mathml",
 	"shell_cmd": "pandoc $file -o $file_base_name.pdf --template=template.tex", 
-	"selector" : "source.markdown",
+	"selector" : "source.md",
 	"cancel": {"kill": true},  
 }
