@@ -16,8 +16,8 @@
 	{ "keys": ["ctrl+shift+b"], "command": "build" },
 
 	// jump to end/beginning of line 
-	{ "keys": ["alt+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-	{ "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+	{ "keys": ["alt+j"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+;"], "command": "move_to", "args": {"to": "eol", "extend": false} },
 
 	// close all 
 	{ "keys": ["alt+shift+w"], "command": "close_all" },
