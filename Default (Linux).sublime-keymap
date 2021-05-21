@@ -16,8 +16,8 @@
 	{ "keys": ["ctrl+shift+b"], "command": "build" },
 
 	// jump to end/beginning of line 
-	{ "keys": ["alt+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-	{ "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+	{ "keys": ["alt+j"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+;"], "command": "move_to", "args": {"to": "eol", "extend": false} },
 
 	// close all 
 	{ "keys": ["alt+shift+w"], "command": "close_all" },
@@ -38,8 +38,8 @@
 	{ "keys": ["alt+shift+n"], "command": "select_lines", "args": {"forward": true} },
 
 	// beginning/end of file 
-	{ "keys": ["escape", "<"], "command": "move_to", "args": {"to": "bof", "extend": false} },
-	{ "keys": ["escape", ">"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+	{ "keys": ["alt+k"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+	{ "keys": ["alt+l"], "command": "move_to", "args": {"to": "eof", "extend": false} },
 
 	// save all 
 	{ "keys": ["alt+shift+s"], "command": "save_all" }, 
