@@ -82,4 +82,7 @@
 	// toggle comment 
 	{ "keys": ["ctrl+forward_slash"], "command": "toggle_comment", "args": { "block": false } },
 
+	// close tab 
+	{ "keys": ["ctrl+w"], "command": "close" },
+
 ]
